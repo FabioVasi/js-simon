@@ -26,9 +26,25 @@ let myDate = new Date().getTime();
 
 console.log(myDate);
 
+let secondsDifference = correctiontime - myDate;
+
+console.log(secondsDifference);
+
 const clock = setInterval(function() {
     
-    //document.querySelector('.countDown').innerHTML = ;
+    document.querySelector('.countDown').innerHTML = secondsDifference;
+
+    if(secondsDifference == 0) {
+
+        clearInterval(clock);
+
+        alert('Correggi il compito')
+
+    } else {
+
+        secondsDifference--;
+        
+    }
 
     
 }, 1000);

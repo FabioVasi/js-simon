@@ -15,3 +15,20 @@ Quanti millisecondi mi separano da domani alle 9:30?
 Esiste un oggetto JS in grado di gestire le date?
 Esistono dei metodi per trasformare una data in millisecondi?
 */
+
+
+
+const correctiontime = new Date("Sep 6, 2023 9:30:00").getTime();
+
+console.log(correctiontime);
+
+let myDate = new Date().getTime();
+
+console.log(myDate);
+
+const clock = setInterval(function() {
+    
+    //document.querySelector('.countDown').innerHTML = ;
+
+    
+}, 1000);
